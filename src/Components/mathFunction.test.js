@@ -1,6 +1,7 @@
 import {sum} from './mathFunction.js';
 import {div} from './mathFunction.js';
 import {Multiple} from './mathFunction.js';
+import {Subtract} from './mathFunction.js';
 
 
 describe('Call sum of numbers', () => {
@@ -62,3 +63,17 @@ describe('Multiple numbers: 5*20', () => {
         expect(result).toBe(100);
     })
 });
+
+describe('Subtract numbers: 38-10', () => {
+    const result = Subtract(38, 10)
+
+    it('Should not equal 18', () => {
+        expect(result).not.toBe(18);
+    })
+
+    it('Should equal 28', () => {
+        expect(result).toBe(28);
+    })
+});
+
+
